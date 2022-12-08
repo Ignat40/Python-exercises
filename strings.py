@@ -39,10 +39,21 @@ def first_and_last_3():
     print(first_3, last_3)
 
 
+# Task 5. - remove characters from even indices
 
+def remove_even_char():
+
+    string = str("The quick brown fox jumped over the lazy dog")
+    even_string = ""
+    for i in range(len(string)):
+        if i % 2 == 0:
+            even_string += string[i]
+    print(even_string)
+   
 
 if __name__ == "__main__":
     string_length()
     character_index()
     reverse_string()
     first_and_last_3()
+    remove_even_char()
