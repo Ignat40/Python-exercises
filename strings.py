@@ -51,7 +51,7 @@ def remove_even_char():
     print(even_string)
 
 
-# Task 6. - Check if string only contains numbers
+# Task 6. - Check if string only contains numbers -> we use the isdigit() method to determine the type of variable
 
 def check_for_number():
     
@@ -64,7 +64,31 @@ def check_for_number():
         else:
             break
     
-   
+# Task 7. - Remove nth charachter from a string - with the rfind() method i examined that "H" is the 24th letter, thus the value of the index
+    
+def remove_nth_char():
+    string = str("I don't want to see the H!")
+    new_string = ""
+    index = 24
+    
+    new_string = list(string)
+    new_string.pop(index)
+    return "".join(new_string)
+
+
+# Task 8. - Replace a character in a string 
+
+def replace():
+    string = str("I want to replace the H")
+    character = "P"
+    new_string = ""
+    index = 22
+    
+    new_string = list(string)
+    new_string.pop(index)
+    new_string.append(character)
+
+    return "".join(new_string)
 
 if __name__ == "__main__":
     #string_length()
@@ -73,3 +97,6 @@ if __name__ == "__main__":
     #first_and_last_3()
     #remove_even_char()
     #print(check_for_number())
+    #print(remove_nth_char())
+    print(replace())
+
