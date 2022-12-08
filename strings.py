@@ -49,11 +49,27 @@ def remove_even_char():
         if i % 2 == 0:
             even_string += string[i]
     print(even_string)
+
+
+# Task 6. - Check if string only contains numbers
+
+def check_for_number():
+    
+    mix_sting = "Today on 28th of november I turn 28 years!"
+    numbered_stirng = "123, 431, 1234, 4"
+
+    for i in numbered_stirng:
+        if i.isdigit():
+            return("Only numbers")
+        else:
+            break
+    
    
 
 if __name__ == "__main__":
-    string_length()
-    character_index()
-    reverse_string()
-    first_and_last_3()
-    remove_even_char()
+    #string_length()
+    #character_index()
+    #reverse_string()
+    #first_and_last_3()
+    #remove_even_char()
+    #print(check_for_number())
