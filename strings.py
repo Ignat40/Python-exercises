@@ -90,6 +90,29 @@ def replace():
 
     return "".join(new_string)
 
+##########
+#LEVEL 2#
+#########
+
+# Task 9. - Change commas by dots - using the .replace() command
+
+def commas_to_dots():
+    string = "I, want, to, replace, the, commas, with, dots,"
+
+    print(string.replace(",", "."))
+
+
+# Task 10. - Check if a string contains all the letters of the alphabet
+
+import string as stri
+
+def check_for_all_letters():
+    
+    string = "The quick brown fox jumps over the lazy dog"
+    alphabet = set(stri.ascii_lowercase)
+    print(set(string.lower()) >= alphabet)
+
+
 if __name__ == "__main__":
     #string_length()
     #character_index()
@@ -98,5 +121,6 @@ if __name__ == "__main__":
     #remove_even_char()
     #print(check_for_number())
     #print(remove_nth_char())
-    print(replace())
-
+    #print(replace())
+    #commas_to_dots()
+    check_for_all_letters()
